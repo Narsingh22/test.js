@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="even-numbers">
+        <h1>All even number from 0-10</h1>
+        <p id="print"></p>
+        <button onclick="evenNums()">Print</button>
+    </section>
+
+    <section id="multiplication">
+        <h1>Multiplication</h1>
+        <div>
+            <input type="text" id="input1">
+            <p id="sign">*</p>
+            <input type="text" id="input2">
+            <p id="result"></p>
+        </div>
+        <button onclick="sum()">SUM</button>
+    </section>
+
+    <section id="length-converter">
+        <h1>Length Converter</h1>
+        <div id="mm-cm">
+            <div>
+                <input type="text" id="milimeter" placeholder="milimeter">
+                <input type="text" id="centimeter" placeholder="centimeter">
+            </div>
+        </div>
+
+        <div id="cm-m">
+            <div>
+                <input type="text" id="cm" placeholder="centimeter">
+                <input type="text" id="meter" placeholder="meter">
+            </div>
+        </div>
+    </section>
+
+    <section id="sorting">
+        <h1>SORTING AN ARRAY</h1>
+        <p id="givenArr"></p>
+        <p id="sortingArr"></p>
+        <button onclick="sort()">SORT</button>
+    </section>
+
+    <section id="divisible">
+        <h1>DIVISIBLE BY 10</h1>
+        <input type="number" id="input-el">
+        <p id="return"></p>
+        <button onclick="divisible()">SHOW</button>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
