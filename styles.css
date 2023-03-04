@@ -2,7 +2,7 @@ div{
     display: flex;
     align-items: center;
 }
-#multiplication input{
+.multiplication input{
     width: 40px;
     height: 4vh;
 }
