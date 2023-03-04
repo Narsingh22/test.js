@@ -17,14 +17,15 @@ let divisibleNum = document.getElementById("divisible-num");
 let outputEl = document.getElementById("output");
 
 function evenNums() {
+    printEvenNums.textContent = "";
     for (let i = 0; i <= 10; i += 2) {
-        printEvenNums.textContent += (i) + " ";
+        printEvenNums.textContent += `${i} `;
     }
 }
 
 function multiply() {
     let sum = num1.value * num2.value;
-    resultEl.textContent = " " + "=" + sum;
+    resultEl.textContent = ` = ${sum}`;
 }
 
 milimeter.addEventListener('input', function(){
@@ -38,12 +39,12 @@ centimeter.addEventListener('input', function(){
 });
 
 centimeter2.addEventListener('input', function(){
-    let centimeterToMeter = centimeter2.value * 100;
+    let centimeterToMeter = centimeter2.value / 100;
     meter.value = centimeterToMeter;
 });
 
 meter.addEventListener('input', function(){
-    let meterToCentimeter = meter.value / 100;
+    let meterToCentimeter = meter.value * 100;
     centimeter2.value = meterToCentimeter;
 });
 
