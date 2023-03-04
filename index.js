@@ -50,7 +50,7 @@ meter.addEventListener('input', function(){
 
 function sort(){
     let arr = [34, 438, 53, 35, 348, 25, 57];
-    sortingArrEl.textContent = arr.sort();
+    sortedArrEl.textContent = arr.sort();
 }
 
 function divisible(){
